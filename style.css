@@ -24,7 +24,4 @@ body {
   flex-wrap: wrap;
 }
 .left {
-  width: 30%;
-  height: 100vh;
-  background-color: var(--very-dark-violet);
 }
