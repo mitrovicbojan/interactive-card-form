@@ -23,5 +23,24 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
 }
+
+.card-front {
+  position: relative;
+  background-image: url(./images/bg-card-front.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 250px;
+  border: 2px solid red;
+  top: -710px;
+  left: 150px;
+}
+.card-front-number {
+  position: relative;
+  top: 130px;
+  left: 50px;
+  font-size: 30px;
+  color: var(--white);
+}
 .left {
 }
