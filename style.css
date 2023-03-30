@@ -16,14 +16,39 @@ body {
 }
 .container {
   display: flex;
+  flex-wrap: wrap;
 }
 .form {
-  width: 500px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0px;
+  left: 250px;
+  border: 2px solid red;
+  height: 100vh;
 }
 
+.container-form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: var(--white);
+  background-color: var(--very-dark-violet);
+  letter-spacing: 3px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
 .card-front {
   position: relative;
   background-image: url(./images/bg-card-front.png);
@@ -41,6 +66,12 @@ body {
   left: 50px;
   font-size: 30px;
   color: var(--white);
+}
+
+.card-back {
+  position: relative;
+  top: -650px;
+  left: 250px;
 }
 .left {
 }
