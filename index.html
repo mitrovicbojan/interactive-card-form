@@ -35,11 +35,17 @@
           <label>Card Number</label>
           <input placeholder="e.g. 1234 5678 9123 0000" />
           <div class="dates-form">
-            <label>Exp. Date (MM/YY)</label>
-            <input placeholder="MM" />
-            <input placeholder="YY" />
-            <label>CVC</label>
-            <input placeholder="e.g. 123" />
+            <div class="exp-dates">
+              <label class="exp-date-label">Exp. Date (MM/YY)</label>
+              <div class="exp-inputs">
+                <input class="exp-month" placeholder="MM" />
+                <input class="exp-year" placeholder="YY" />
+              </div>
+            </div>
+            <div class="cvc-wrap">
+              <label class="cvc">CVC</label>
+              <input class="cvc-num" placeholder="e.g. 123" />
+            </div>
           </div>
           <button class="btn">Confirm</button>
         </div>
