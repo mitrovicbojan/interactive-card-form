@@ -51,9 +51,14 @@ input {
 .dates-form {
   display: flex;
   width: 100%;
-  border: 2px solid green;
+  margin-top: 10px;
 }
-
+.exp-inputs {
+  margin-top: 10px;
+}
+.cvc-num {
+  margin-top: 10px;
+}
 .exp-inputs {
   display: flex;
 }
@@ -65,7 +70,7 @@ input {
 
 .cvc-num {
   position: relative;
-  width: 95%;
+  width: 91%;
 }
 
 .btn {
