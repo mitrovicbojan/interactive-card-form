@@ -36,7 +36,7 @@ input {
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 0px;
+  top: 0;
   left: 250px;
   border: 2px solid red;
   height: 100vh;
@@ -108,5 +108,13 @@ input {
   top: -650px;
   left: 250px;
 }
+.card-back-cvc {
+  position: relative;
+  top: -145px;
+  font-size: 1.4rem;
+  left: 330px;
+  color: var(--white);
+}
 .left {
+  height: 100vh;
 }
