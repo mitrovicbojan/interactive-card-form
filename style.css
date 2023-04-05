@@ -38,7 +38,6 @@ input {
   position: relative;
   top: 0;
   left: 250px;
-  border: 2px solid red;
   height: 100vh;
 }
 
@@ -91,18 +90,38 @@ input {
   background-repeat: no-repeat;
   width: 450px;
   height: 250px;
-  border: 2px solid red;
   top: -710px;
   left: 150px;
 }
 .card-front-number {
   position: relative;
-  top: 130px;
+  top: 70px;
   left: 50px;
   font-size: 30px;
   color: var(--white);
 }
+.card-front-name {
+  position: relative;
+  top: 100px;
+  left: 50px;
+  font-size: 1.2rem;
+  color: var(--white);
+  font-weight: 200;
+}
 
+.card-front-date {
+  position: relative;
+  top: 75px;
+  left: 350px;
+  font-size: 1.2rem;
+  color: var(--white);
+  font-weight: 200;
+}
+.card-logo {
+  position: relative;
+  top: 30px;
+  left: 50px;
+}
 .card-back {
   position: relative;
   top: -650px;
