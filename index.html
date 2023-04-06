@@ -36,6 +36,7 @@
           <input placeholder="e.g. Jane Appleseed" />
           <label>Card Number</label>
           <input placeholder="e.g. 1234 5678 9123 0000" />
+          <p>Wrong format, numbers only.</p>
           <div class="dates-form">
             <div class="exp-dates">
               <label class="exp-date-label">Exp. Date (MM/YY)</label>
@@ -43,10 +44,14 @@
                 <input class="exp-month" placeholder="MM" />
                 <input class="exp-year" placeholder="YY" />
               </div>
+              <p>Can't be blank.</p>
             </div>
             <div class="cvc-wrap">
-              <label class="cvc">CVC</label>
-              <input class="cvc-num" placeholder="e.g. 123" />
+              <div>
+                <label class="cvc">CVC</label>
+                <input class="cvc-num" placeholder="e.g. 123" />
+              </div>
+              <p>Can't be blank.</p>
             </div>
           </div>
           <button class="btn">Confirm</button>
