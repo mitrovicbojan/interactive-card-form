@@ -71,6 +71,11 @@ input {
   position: relative;
   width: 91%;
 }
+#no-num-input,
+#no-exp-year,
+#no-cvc-num {
+  color: var(--red-error);
+}
 
 .btn {
   padding: 10px;
