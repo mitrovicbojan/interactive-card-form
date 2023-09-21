@@ -24,12 +24,14 @@
           <div class="card-front-number" id="card-front-number">
             0000 0000 0000 0000
           </div>
-          <div class="card-front-name">Jane Appleseed</div>
-          <div class="card-front-date"><span>00</span>/<span>00</span></div>
+          <div class="card-front-name" id="card-front-name">Jane Appleseed</div>
+          <div class="card-front-date">
+            <span id="year">00</span>/<span id="month">00</span>
+          </div>
         </div>
         <div class="card-back">
           <img src="./images/bg-card-back.png" />
-          <div class="card-back-cvc">000</div>
+          <div class="card-back-cvc" id="card-back-cvc">000</div>
         </div>
       </div>
       <div class="form">
@@ -37,21 +39,25 @@
           <label>Cardholder Name</label>
           <input placeholder="e.g. Jane Appleseed" />
           <label>Card Number</label>
-          <input class="num-input" placeholder="e.g. 1234 5678 9123 0000" />
+          <input
+            class="num-input"
+            id="num-input"
+            placeholder="e.g. 1234 5678 9123 0000"
+          />
           <p id="no-num-input">Wrong format, numbers only.</p>
           <div class="dates-form">
             <div class="exp-dates">
               <label class="exp-date-label">Exp. Date (MM/YY)</label>
               <div class="exp-inputs">
-                <input class="exp-month" placeholder="MM" />
-                <input class="exp-year" placeholder="YY" />
+                <input class="exp-month" id="exp-month" placeholder="MM" />
+                <input class="exp-year" id="exp-year" placeholder="YY" />
               </div>
               <p id="no-exp-year">Can't be blank.</p>
             </div>
             <div class="cvc-wrap">
               <div>
                 <label class="cvc">CVC</label>
-                <input class="cvc-num" placeholder="e.g. 123" />
+                <input class="cvc-num" id="cvc-num" placeholder="e.g. 123" />
               </div>
               <p id="no-cvc-num">Can't be blank.</p>
             </div>
