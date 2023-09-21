@@ -1,4 +1,4 @@
-const cardNumInput = document.getElementsByClassName(".num-input");
+// let cardNumInput = document.getElementById("num-input");
 const cardNumOutput = document.getElementById("card-front-number");
 const noNumInput = document.getElementById("no-num-input");
 const noExpYear = document.getElementById("no-exp-year");
@@ -9,7 +9,11 @@ noNumInput.style.display = "None";
 noCvcNum.style.display = "None";
 
 function func() {
-  let helloCard = "4566 7899 1233";
+  let cardNumInput = document.getElementById("num-input-first");
+  console.log(cardNumInput);
+  let card = cardNumInput.value;
+  console.log(card);
+  let helloCard = card;
   cardNumOutput.innerText = helloCard;
   console.log(cardNumOutput);
 }
