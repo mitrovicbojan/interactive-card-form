@@ -12,7 +12,7 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <title>Frontend Mentor | Interactive card details form</title>
   </head>
   <body>
@@ -38,8 +38,10 @@
         <div class="container-form">
           <label>Cardholder Name</label>
           <input id="card-name" placeholder="e.g. Jane Appleseed" />
-          <label>Card Number</label>
+          <label for="credit-card">Card Number</label>
           <input
+            type="text"
+            value=""
             class="num-input"
             id="num-input-first"
             placeholder="e.g. 1234 5678 9123 0000"

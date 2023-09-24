@@ -16,7 +16,23 @@ noExpYear.style.display = "None";
 noNumInput.style.display = "None";
 noCvcNum.style.display = "None";
 
+$(cardNumInput).on("keypress change", function () {
+  $(this).val(function (index, value) {
+    return value.replace(/\W/gi, "").replace(/(.{4})/g, "$1 ");
+  });
+});
+
 function func() {
+  let num = cardNumInput.value;
+  console.log(num);
+  let testNum = /[a-zA-Z]/;
+  let result = testNum.test(num);
+  console.log(result);
+  if (result != true) {
+    noNumInput.style.display = "None";
+  } else {
+    noNumInput.style.display = "Block";
+  }
   cardNumOutput.innerText = cardNumInput.value;
   cardFrontName.innerText = cardName.value;
   expYearOutput.innerText = expYear.value;
