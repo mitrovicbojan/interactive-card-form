@@ -29,12 +29,11 @@ function func() {
   if (result != false) {
     noNumInput.style.display = "Block";
     cardNumInput.classList.add("borderColor");
-  } else {
-    noNumInput.style.display = "None";
   }
 
   if (expMonth.value == "" || expYear.value == "") {
     noExpYear.style.display = "Block";
+    expYear.classList.add("borderColor");
   }
 
   cardNumOutput.innerText = cardNumInput.value;
