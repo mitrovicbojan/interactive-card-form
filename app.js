@@ -11,10 +11,11 @@ const expMonthOutput = document.getElementById("month");
 const cvc = document.getElementById("card-back-cvc");
 const cvcInput = document.getElementById("cvc-num");
 let cardNumInput = document.getElementById("num-input-first");
+let containerForm = document.getElementById("container-form");
 noExpYear.style.display = "None";
 noNumInput.style.display = "None";
 noCvcNum.style.display = "None";
-let hello = document.getElementById("hello");
+let hello = document.getElementById("confirmation");
 
 $(cardNumInput).on("keypress change", function () {
   $(this).val(function (index, value) {
@@ -50,7 +51,7 @@ function func() {
     expYearOutput.innerText = expYear.value;
   }
   if (cvcInput.value == "") {
-    noExpYear.style.display = "Block";
+    noCvcNum.style.display = "Block";
     cvcInput.classList.add("borderColor");
     hello.style.display = "None";
   } else {
