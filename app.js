@@ -24,18 +24,24 @@ $(cardNumInput).on("keypress change", function () {
 
 function func() {
   let num = cardNumInput.value;
-  console.log(num);
   let testNum = /[a-zA-Z]/;
   let result = testNum.test(num);
-  console.log(result);
-  if (result != true) {
-    noNumInput.style.display = "None";
-  } else {
+  if (result != false) {
     noNumInput.style.display = "Block";
+    cardNumInput.classList.add("borderColor");
+  } else {
+    noNumInput.style.display = "None";
   }
+
+  if (expMonth.value == "" || expYear.value == "") {
+    noExpYear.style.display = "Block";
+  }
+
   cardNumOutput.innerText = cardNumInput.value;
   cardFrontName.innerText = cardName.value;
   expYearOutput.innerText = expYear.value;
   expMonthOutput.innerText = expMonth.value;
   cvc.innerText = cvcInput.value;
+  console.log(expMonth.value);
+  console.log(expYear.value);
 }

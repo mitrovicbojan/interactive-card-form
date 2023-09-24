@@ -142,3 +142,7 @@ input {
 .left {
   height: 100vh;
 }
+
+.borderColor {
+  border: 2px solid var(--red-error);
+}
