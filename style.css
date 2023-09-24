@@ -146,3 +146,6 @@ input {
 .borderColor {
   border: 2px solid var(--red-error);
 }
+.hello {
+  display: none;
+}

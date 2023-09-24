@@ -1,4 +1,3 @@
-// let cardNumInput = document.getElementById("num-input");
 const cardNumOutput = document.getElementById("card-front-number");
 const noNumInput = document.getElementById("no-num-input");
 const noExpYear = document.getElementById("no-exp-year");
@@ -15,6 +14,7 @@ let cardNumInput = document.getElementById("num-input-first");
 noExpYear.style.display = "None";
 noNumInput.style.display = "None";
 noCvcNum.style.display = "None";
+let hello = document.getElementById("hello");
 
 $(cardNumInput).on("keypress change", function () {
   $(this).val(function (index, value) {
@@ -23,24 +23,37 @@ $(cardNumInput).on("keypress change", function () {
 });
 
 function func() {
+  hello.style.display = "Block";
+  cardFrontName.innerText = cardName.value;
   let num = cardNumInput.value;
   let testNum = /[a-zA-Z]/;
   let result = testNum.test(num);
   if (result != false) {
     noNumInput.style.display = "Block";
     cardNumInput.classList.add("borderColor");
+    hello.style.display = "None";
+  } else {
+    cardNumOutput.innerText = cardNumInput.value;
   }
-
-  if (expMonth.value == "" || expYear.value == "") {
+  if (expMonth.value == "") {
+    noExpYear.style.display = "Block";
+    expMonth.classList.add("borderColor");
+    hello.style.display = "None";
+  } else {
+    expMonthOutput.innerText = expMonth.value;
+  }
+  if (expYear.value == "") {
     noExpYear.style.display = "Block";
     expYear.classList.add("borderColor");
+    hello.style.display = "None";
+  } else {
+    expYearOutput.innerText = expYear.value;
   }
-
-  cardNumOutput.innerText = cardNumInput.value;
-  cardFrontName.innerText = cardName.value;
-  expYearOutput.innerText = expYear.value;
-  expMonthOutput.innerText = expMonth.value;
-  cvc.innerText = cvcInput.value;
-  console.log(expMonth.value);
-  console.log(expYear.value);
+  if (cvcInput.value == "") {
+    noExpYear.style.display = "Block";
+    cvcInput.classList.add("borderColor");
+    hello.style.display = "None";
+  } else {
+    cvc.innerText = cvcInput.value;
+  }
 }
