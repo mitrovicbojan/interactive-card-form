@@ -24,37 +24,55 @@ $(cardNumInput).on("keypress change", function () {
 });
 
 function func() {
-  hello.style.display = "Block";
   cardFrontName.innerText = cardName.value;
   let num = cardNumInput.value;
   let testNum = /[a-zA-Z]/;
   let result = testNum.test(num);
+  let cardVal = false;
+  let monthVal = false;
+  let yearVal = false;
+  let cvcVal = false;
   if (result != false) {
     noNumInput.style.display = "Block";
     cardNumInput.classList.add("borderColor");
-    hello.style.display = "None";
+
+    cardVal = false;
   } else {
     cardNumOutput.innerText = cardNumInput.value;
+    cardVal = true;
   }
   if (expMonth.value == "") {
     noExpYear.style.display = "Block";
     expMonth.classList.add("borderColor");
-    hello.style.display = "None";
+    monthVal = false;
   } else {
     expMonthOutput.innerText = expMonth.value;
+    monthVal = true;
   }
   if (expYear.value == "") {
     noExpYear.style.display = "Block";
     expYear.classList.add("borderColor");
-    hello.style.display = "None";
+    yearVal = false;
   } else {
     expYearOutput.innerText = expYear.value;
+    yearVal = true;
   }
   if (cvcInput.value == "") {
     noCvcNum.style.display = "Block";
     cvcInput.classList.add("borderColor");
-    hello.style.display = "None";
+    cvcVal = false;
   } else {
     cvc.innerText = cvcInput.value;
+    cvcVal = true;
+  }
+
+  if (
+    cardVal === true &&
+    yearVal === true &&
+    monthVal === true &&
+    cvcVal === true
+  ) {
+    hello.style.display = "Block";
+    containerForm.style.display = "None";
   }
 }
