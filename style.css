@@ -157,7 +157,6 @@ input {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border: 2px solid red;
   }
 
   .left {
@@ -174,7 +173,6 @@ input {
     border-radius: 10px;
     z-index: 1000;
     height: 200px;
-    border: 2px solid red;
   }
   .card-front img {
     width: 20%;
@@ -193,22 +191,23 @@ input {
   .card-front-date {
     left: 250px;
     font-size: 18px;
+    width: 10%;
   }
 
   .card-back {
     position: relative;
     top: -180px;
     left: 50px;
-    border: 2px solid red;
+
     width: 80%;
   }
   .card-back img {
     width: 100%;
-    border: 2px solid red;
   }
   .card-back-cvc {
     left: 250px;
     top: -120px;
+    width: 10%;
   }
   .form {
     width: 90%;
