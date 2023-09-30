@@ -49,6 +49,7 @@
             class="num-input"
             id="num-input-first"
             placeholder="e.g. 1234 5678 9123 0000"
+            maxlength="19"
           />
           <p id="no-num-input">Wrong format, numbers only.</p>
           <div class="dates-form">
@@ -60,12 +61,14 @@
                   id="exp-month"
                   type="text"
                   placeholder="MM"
+                  maxlength="2"
                 />
                 <input
                   class="exp-year"
                   id="exp-year"
                   type="text"
                   placeholder="YY"
+                  maxlength="2"
                 />
               </div>
               <p id="no-exp-year">Can't be blank.</p>
@@ -73,7 +76,12 @@
             <div class="cvc-wrap">
               <div>
                 <label class="cvc">CVC</label>
-                <input class="cvc-num" id="cvc-num" placeholder="e.g. 123" />
+                <input
+                  class="cvc-num"
+                  id="cvc-num"
+                  placeholder="e.g. 123"
+                  maxlength="3"
+                />
               </div>
               <p id="no-cvc-num">Can't be blank.</p>
             </div>

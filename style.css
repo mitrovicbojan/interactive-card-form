@@ -217,9 +217,10 @@ input {
     width: 100%;
   }
   .card-back-cvc {
-    left: 250px;
-    top: -120px;
+    left: 270px;
+    top: -110px;
     width: 10%;
+    font-size: 16px;
   }
   .form {
     width: 90%;
@@ -232,5 +233,16 @@ input {
   .container-form {
     width: 100%;
     padding: 0;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .card-back-cvc {
+    left: 230px;
+    top: -100px;
+    width: 10%;
+    font-size: 15px;
+  }
+  .card-front {
+    width: 90%;
   }
 }
