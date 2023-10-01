@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/interactivecarddetails-d9sCmP5VNp)
 - Live Site URL: [Add live site URL here](https://interactive-frontendm.netlify.app/)
 
 ### Built with
