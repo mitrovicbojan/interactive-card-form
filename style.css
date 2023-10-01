@@ -246,3 +246,35 @@ input {
     width: 90%;
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .card-front {
+    position: relative;
+    top: 140px;
+    left: 50px;
+    width: 100%;
+    border-radius: 10px;
+    z-index: 1000;
+  }
+  .card-back {
+    position: relative;
+    top: 180px;
+    left: 50px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .card-front {
+    position: relative;
+    top: 140px;
+    left: 120px;
+    width: 100%;
+    border-radius: 10px;
+    z-index: 1000;
+  }
+  .card-back {
+    position: relative;
+    top: 180px;
+    left: 150px;
+  }
+}
